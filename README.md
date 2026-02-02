@@ -30,7 +30,7 @@ For instance, utilizing Ollama behind a reverse proxy for auth and implementing 
 
 If all you need is authentication, this is by far the most straightforward and lightweight solution.
 
-2. Centralized Solutions like litellm or llmgateway
+2. Centralized Solutions like [LiteLLM](https://www.litellm.ai/) or [LLM Gateway](https://llmgateway.io/)
 
 These solutions are excellent and feature-rich but are overkill for what I am looking for and still do not address the problem of exposing Ollama on a server and using this server remotely, especially if it's a personal PC or laptop. Since these solutions are centralized, you would deploy them (for example) on the PC, meaning that this instance would need to see both the laptop and PC Ollamas. If the laptop is exposed without an auth layer, that presents a problem. Thus, I moved away from centralized solutions due to their heavy and feature-rich nature, which might be difficult to deploy next to each Ollama instance.
 
